@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Us - Non-Profit Organization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #f4eeee;
+        }
+
+        header {
+            background-color: #000000;
+            color: rgb(252, 252, 252);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343ec4;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: hsl(165, 100%, 98%);
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #fefeff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .intro, .form {
+            flex: 1 1 calc(50% - 20px);
+            background-color: rgb(50, 76, 192);
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(227, 231, 227, 0.1);
+            border-radius: 8px;
+        }
+
+        .intro p, .form p {
+            line-height: 1.6;
+        }
+
+        .form input, .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form button {
+            background-color: #55a038;
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .form button:hover {
+            background-color: #000000;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Volunteer with Us</h1>
+    <p>Make a Difference. Be the Change.</p>
+</header>
+
+
+
+<section>
+    <div class="container">
+        <div class="intro">
+            <h2 class="section-title">Join Our Volunteer Team</h2>
+            <p>We are a non-profit organization dedicated to making the world a better place. By volunteering with us, you can help in cleaning the rivers, contribute to meaningful causes, and make a real difference in people's lives. Whether you're looking to lend a hand in your community or contribute to a cause you're passionate about, we welcome you to join our team of dedicated volunteers.</p>
+            <p>Your time and efforts will help us carry out essential programs, from providing this world a better place to live to help us with cleaning. Together, we can create lasting change and build a more compassionate clean world.</p>
+        </div>
+        <div class="form">
+            <h2 class="section-title">Sign Up to Volunteer</h2>
+            <p>Fill out the form below to let us know how you can help. We're looking forward to having you on our team!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="message">Why do you want to volunteer?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>

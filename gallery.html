@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery | Blue Horizon Foundation</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #3b8c9c;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #3b8c9c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Blue Horizon Foundation</h1>
+            <p>Take a look at the impact we're making! Together, we clean our rivers and protect the environment.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item">
+                    <img src="https://i.ytimg.com/vi/qsWE0nysJaE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC4TNxNMD4ZpLWn5A2wPYWMYyRl1g" alt="River Cleanup Event 1">
+                    <div class="caption">River Cleanup Event - Lakeview Park</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ727d67y1lKrdeSd0a5m9FKwFMMRLxPDlqZA&s" alt="River Cleanup Event 2">
+                    <div class="caption">Clearing Waste from Clearwater River</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4KAn8OXwfzbfNyJciJQmyw1SYOkwKYWtkg&s" alt="River Cleanup Event 3">
+                    <div class="caption">Community Volunteers in Action</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://media.river-cleanup.org/3301/conversions/2022-02_RiverCleanup-Ishe%CC%88m-43-responsive.jpg" alt="River Cleanup Event 4">
+                    <div class="caption">Teamwork at Riverside Cleanup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i0.wp.com/oucblog.com/wp-content/uploads/2023/12/RG3_9896.jpg?resize=584%2C389&ssl=1" alt="River Cleanup Event 5">
+                    <div class="caption">Educational Workshop on River Conservation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://freshwaterblog.net/wp-content/uploads/2015/09/800px-elwha_river_-_humes_ranch_area2.jpg?w=728&h=546" alt="River Cleanup Event 6">
+                    <div class="caption">Restoring Ecosystems along the River</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 River Cleaning Initiative | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
